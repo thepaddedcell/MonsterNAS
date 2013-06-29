@@ -7,8 +7,9 @@
 //
 
 #import "MTLModel.h"
+#import <Mantle.h>
 
-@interface MOBSABNZBDQueueSlot : MTLModel
+@interface MOBSABNZBDQueueSlot : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, strong) NSString* status;
 @property (nonatomic) NSInteger index;
@@ -20,8 +21,6 @@
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic, strong) NSString* remaining;
 @property (nonatomic, strong) NSString* percentage;
-@property (nonatomic, strong) NSString* script;
-@property (nonatomic, strong) NSString* msgID;
 @property (nonatomic, strong) NSString* category;
 
 @end

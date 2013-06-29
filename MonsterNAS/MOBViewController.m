@@ -27,7 +27,7 @@
     server.name = @"SAB";
     server.apiKey = @"82e84b476d68cbe28ad1d9afb494397d";
     
-    [MOBAPI updateHistoryForServer:server success:^{
+    [MOBAPI updateQueueForServer:server success:^{
         
     } error:^(NSError *error) {
         

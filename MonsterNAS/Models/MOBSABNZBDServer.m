@@ -10,6 +10,11 @@
 
 #define kPageSize 10
 
+@interface MOBSABNZBDServer ()
+
+
+@end
+
 
 @implementation MOBSABNZBDServer
 

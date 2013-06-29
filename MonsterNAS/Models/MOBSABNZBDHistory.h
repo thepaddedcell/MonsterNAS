@@ -10,6 +10,8 @@
 
 @interface MOBSABNZBDHistory : MTLModel <MTLJSONSerializing>
 
+@property (nonatomic, weak) id server;
+
 @property (nonatomic, strong) NSArray* slots;
 @property (nonatomic, strong) NSString* diskSpace;
 @property (nonatomic, strong) NSString* diskSpaceTotal;

@@ -6,9 +6,16 @@
 //  Copyright (c) 2013 Craig Stanford. All rights reserved.
 //
 
+#import <Mantle.h>
 #import "MOBServer.h"
 
+#import "MOBSABNZBDQueue.h"
+#import "MOBSABNZBDHistory.h"
+
 @interface MOBSABNZBDServer : MOBServer
+
+@property (nonatomic, strong) MOBSABNZBDQueue* queue;
+@property (nonatomic, strong) MOBSABNZBDHistory* history;
 
 @property (nonatomic, strong) NSArray* categories;
 @property (nonatomic, strong) NSArray* scripts;

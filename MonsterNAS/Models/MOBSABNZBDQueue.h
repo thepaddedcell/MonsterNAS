@@ -6,9 +6,11 @@
 //  Copyright (c) 2013 Craig Stanford. All rights reserved.
 //
 
-#import "MTLModel.h"
+#import <Mantle.h>
 
-@interface MOBSABNZBDQueue : MTLModel
+@interface MOBSABNZBDQueue : MTLModel <MTLJSONSerializing>
+
+@property (nonatomic, weak) id server;
 
 @property (nonatomic, strong) NSArray* slots;
 @property (nonatomic, strong) NSString* status;

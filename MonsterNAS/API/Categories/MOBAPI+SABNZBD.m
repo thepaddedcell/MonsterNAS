@@ -10,7 +10,6 @@
 #import <AFNetworking.h>
 #import "MOBSABNZBDHistory.h"
 #import "MOBSABNZBDQueue.h"
-#import "MOBSABNZBDQueueSlot.h"
 
 @implementation MOBAPI (SABNZBD)
 
@@ -41,7 +40,15 @@
 
 + (void)updateQueueForServer:(MOBSABNZBDServer *)server success:(MOBAPIVoidBlock)success error:(MOBAPIErrorBlock)error
 {
-    
+    AFJSONRequestOperation* operation = [[AFJSONRequestOperation alloc] initWithRequest:[server queueURLRequest]];
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSError* error = nil;
+        MOBSABNZBDQueue* queue = [MTLJSONAdapter modelOfClass:[MOBSABNZBDQueue class] fromJSONDictionary:responseObject[@"queue"] error:&error];
+        NSLog(@"Queue :%@", queue);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"err: %@", error);
+    }];
+    [[[MOBAPI defaultAPI] queue] addOperation:operation];
 }
 
 @end
