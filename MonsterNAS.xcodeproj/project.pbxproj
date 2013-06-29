@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E602A86E177E98E6007A3145 /* MOBAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = E602A86D177E98E6007A3145 /* MOBAPI.m */; };
+		E602A872177E9949007A3145 /* MOBAPI+SABNZBD.m in Sources */ = {isa = PBXBuildFile; fileRef = E602A871177E9949007A3145 /* MOBAPI+SABNZBD.m */; };
+		E602A875177EB30E007A3145 /* MOBSABNZBDHistorySlot.m in Sources */ = {isa = PBXBuildFile; fileRef = E602A874177EB30E007A3145 /* MOBSABNZBDHistorySlot.m */; };
 		E6991AEF173896830044EBCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6991AEE173896830044EBCA /* UIKit.framework */; };
 		E6991AF1173896830044EBCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6991AF0173896830044EBCA /* Foundation.framework */; };
 		E6991AF3173896830044EBCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6991AF2173896830044EBCA /* CoreGraphics.framework */; };
@@ -30,6 +33,12 @@
 /* Begin PBXFileReference section */
 		76AFEB8B8E9D48708BB02AF0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C588B24AE16A44449873C803 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		E602A86C177E98E6007A3145 /* MOBAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOBAPI.h; path = API/MOBAPI.h; sourceTree = "<group>"; };
+		E602A86D177E98E6007A3145 /* MOBAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOBAPI.m; path = API/MOBAPI.m; sourceTree = "<group>"; };
+		E602A870177E9949007A3145 /* MOBAPI+SABNZBD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MOBAPI+SABNZBD.h"; path = "API/Categories/MOBAPI+SABNZBD.h"; sourceTree = "<group>"; };
+		E602A871177E9949007A3145 /* MOBAPI+SABNZBD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MOBAPI+SABNZBD.m"; path = "API/Categories/MOBAPI+SABNZBD.m"; sourceTree = "<group>"; };
+		E602A873177EB30E007A3145 /* MOBSABNZBDHistorySlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOBSABNZBDHistorySlot.h; path = Models/MOBSABNZBDHistorySlot.h; sourceTree = "<group>"; };
+		E602A874177EB30E007A3145 /* MOBSABNZBDHistorySlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOBSABNZBDHistorySlot.m; path = Models/MOBSABNZBDHistorySlot.m; sourceTree = "<group>"; };
 		E6991AEB173896830044EBCA /* MonsterNAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonsterNAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6991AEE173896830044EBCA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E6991AF0173896830044EBCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,6 +84,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E602A869177E9197007A3145 /* SABNZBD */ = {
+			isa = PBXGroup;
+			children = (
+				E6991B151738B9580044EBCA /* MOBSABNZBDServer.h */,
+				E6991B161738B9580044EBCA /* MOBSABNZBDServer.m */,
+				E6991B1B1738BD880044EBCA /* MOBSABNZBDQueue.h */,
+				E6991B1C1738BD880044EBCA /* MOBSABNZBDQueue.m */,
+				E6991B1E1738BDE90044EBCA /* MOBSABNZBDQueueSlot.h */,
+				E6991B1F1738BDE90044EBCA /* MOBSABNZBDQueueSlot.m */,
+				E6991B211738BEE70044EBCA /* MOBSABNZBDHistory.h */,
+				E6991B221738BEE80044EBCA /* MOBSABNZBDHistory.m */,
+				E602A873177EB30E007A3145 /* MOBSABNZBDHistorySlot.h */,
+				E602A874177EB30E007A3145 /* MOBSABNZBDHistorySlot.m */,
+			);
+			name = SABNZBD;
+			sourceTree = "<group>";
+		};
+		E602A86A177E91AA007A3145 /* SickBeard */ = {
+			isa = PBXGroup;
+			children = (
+				E6991B181738B9810044EBCA /* MOBSickBeardServer.h */,
+				E6991B191738B9810044EBCA /* MOBSickBeardServer.m */,
+			);
+			name = SickBeard;
+			sourceTree = "<group>";
+		};
+		E602A86B177E98CD007A3145 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E602A86F177E991D007A3145 /* Categories */,
+				E602A86C177E98E6007A3145 /* MOBAPI.h */,
+				E602A86D177E98E6007A3145 /* MOBAPI.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		E602A86F177E991D007A3145 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E602A870177E9949007A3145 /* MOBAPI+SABNZBD.h */,
+				E602A871177E9949007A3145 /* MOBAPI+SABNZBD.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		E6991AE2173896820044EBCA = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +161,7 @@
 		E6991AF4173896830044EBCA /* MonsterNAS */ = {
 			isa = PBXGroup;
 			children = (
+				E602A86B177E98CD007A3145 /* API */,
 				E6991B1117389B550044EBCA /* Models */,
 				E6991AFD173896830044EBCA /* MOBAppDelegate.h */,
 				E6991AFE173896830044EBCA /* MOBAppDelegate.m */,
@@ -135,18 +190,10 @@
 		E6991B1117389B550044EBCA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E602A86A177E91AA007A3145 /* SickBeard */,
+				E602A869177E9197007A3145 /* SABNZBD */,
 				E6991B1217389BB00044EBCA /* MOBServer.h */,
 				E6991B1317389BB00044EBCA /* MOBServer.m */,
-				E6991B151738B9580044EBCA /* MOBSABNZBDServer.h */,
-				E6991B161738B9580044EBCA /* MOBSABNZBDServer.m */,
-				E6991B1B1738BD880044EBCA /* MOBSABNZBDQueue.h */,
-				E6991B1C1738BD880044EBCA /* MOBSABNZBDQueue.m */,
-				E6991B1E1738BDE90044EBCA /* MOBSABNZBDQueueSlot.h */,
-				E6991B1F1738BDE90044EBCA /* MOBSABNZBDQueueSlot.m */,
-				E6991B211738BEE70044EBCA /* MOBSABNZBDHistory.h */,
-				E6991B221738BEE80044EBCA /* MOBSABNZBDHistory.m */,
-				E6991B181738B9810044EBCA /* MOBSickBeardServer.h */,
-				E6991B191738B9810044EBCA /* MOBSickBeardServer.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -260,6 +307,9 @@
 				E6991B1D1738BD880044EBCA /* MOBSABNZBDQueue.m in Sources */,
 				E6991B201738BDEA0044EBCA /* MOBSABNZBDQueueSlot.m in Sources */,
 				E6991B231738BEE80044EBCA /* MOBSABNZBDHistory.m in Sources */,
+				E602A86E177E98E6007A3145 /* MOBAPI.m in Sources */,
+				E602A872177E9949007A3145 /* MOBAPI+SABNZBD.m in Sources */,
+				E602A875177EB30E007A3145 /* MOBSABNZBDHistorySlot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
