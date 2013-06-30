@@ -51,8 +51,6 @@
     return [NSURLRequest requestWithURL:[self categoriesURL]];
 }
 
-
-
 #pragma mark - Helpers
 
 - (NSURL *)URLForMode:(NSString*)mode

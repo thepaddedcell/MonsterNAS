@@ -19,6 +19,7 @@
 @property (nonatomic, strong) NSString* size;
 @property (nonatomic, strong) NSString* priority;
 @property (nonatomic, strong) NSString* name;
+@property (nonatomic, strong) NSString* nzoID;
 @property (nonatomic, strong) NSString* remaining;
 @property (nonatomic, strong) NSString* percentage;
 @property (nonatomic, strong) NSString* category;

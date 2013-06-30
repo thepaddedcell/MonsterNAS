@@ -8,16 +8,16 @@
 
 #import "MTLModel.h"
 
-typedef enum : NSUInteger {
-    MOBServerTypeSABNZBD,
-    MOBServerTypeSickBeard,
-} MOBServerType;
-
 @interface MOBServer : MTLModel
 
 @property (nonatomic) MOBServerType type;
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic, strong) NSString* address;
 @property (nonatomic, strong) NSString* apiKey;
+
+- (void)save;
+
++ (NSArray*)serversOfType:(MOBServerType)type;
++ (NSArray*)servers;
 
 @end

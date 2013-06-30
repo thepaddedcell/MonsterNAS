@@ -9,6 +9,15 @@
 #import "MOBSABNZBDHistory.h"
 #import "MOBSABNZBDHistorySlot.h"
 
+#import "MOBSABNZBDServer.h"
+
+@interface MOBSABNZBDHistory ()
+
+@property (nonatomic, weak) id server;
+
+@end
+
+
 @implementation MOBSABNZBDHistory
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
@@ -77,6 +86,16 @@
 - (NSString *)description
 {
     return [NSString stringWithFormat:@"=> Status: %@, Slots Count: %d, Paused: %@", self.status, [self.slots count], self.paused ? @"YES" : @"NO"];
+}
+
+- (void)setServer:(id)server
+{
+    self.server = server;
+}
+
+- (id)server
+{
+    return self.server;
 }
 
 @end

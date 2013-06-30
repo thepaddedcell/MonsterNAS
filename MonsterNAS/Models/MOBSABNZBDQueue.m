@@ -9,6 +9,14 @@
 #import "MOBSABNZBDQueue.h"
 #import "MOBSABNZBDQueueSlot.h"
 
+#import "MOBSABNZBDServer.h"
+
+@interface MOBSABNZBDQueue ()
+
+@property (nonatomic, weak) MOBSABNZBDServer* sabServer;
+
+@end
+
 @implementation MOBSABNZBDQueue
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
@@ -68,7 +76,14 @@
     return [NSString stringWithFormat:@"=> Status: %@, Slots Count: %d, Paused: %@", self.status, [self.slots count], self.paused ? @"YES" : @"NO"];
 }
 
+- (void)setServer:(id)server
+{
+    self.sabServer = server;
+}
 
-
+- (id)server
+{
+    return self.sabServer;
+}
 
 @end

@@ -23,12 +23,12 @@
                   @"remaining": @"mbleft",
                   @"percentage": @"percentage",
                   @"size": @"size",
+                  @"nzoID": @"nzo_id",
                   [NSNull null]: @"script",
                   [NSNull null]: @"msgid",
                   [NSNull null]: @"verbosity",
                   [NSNull null]: @"mb",
                   [NSNull null]: @"filename",
-                  [NSNull null]: @"nzo_id",
                   [NSNull null]: @"unpackopts"
              };
 }

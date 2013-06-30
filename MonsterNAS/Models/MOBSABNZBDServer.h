@@ -27,16 +27,9 @@
 - (NSURLRequest*)historyURLRequest;
 - (NSURLRequest*)queueURLRequest;
 - (NSURLRequest*)categoriesURLRequest;
+- (NSURLRequest*)scriptsURLRequest;
+- (NSURLRequest*)restartURLRequest;
 
-// --- QUEUE Actions
-//Delete
-//Pause
-//Pause Individual
-//Resume
-//Resume Individual
-//Shutdown
-//Add by URL
-//Change Priority
 
 // --- HISTORY Actions
 //Delete

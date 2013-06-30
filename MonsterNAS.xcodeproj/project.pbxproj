@@ -10,6 +10,11 @@
 		E602A86E177E98E6007A3145 /* MOBAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = E602A86D177E98E6007A3145 /* MOBAPI.m */; };
 		E602A872177E9949007A3145 /* MOBAPI+SABNZBD.m in Sources */ = {isa = PBXBuildFile; fileRef = E602A871177E9949007A3145 /* MOBAPI+SABNZBD.m */; };
 		E602A875177EB30E007A3145 /* MOBSABNZBDHistorySlot.m in Sources */ = {isa = PBXBuildFile; fileRef = E602A874177EB30E007A3145 /* MOBSABNZBDHistorySlot.m */; };
+		E602A87A1780DC31007A3145 /* MOBAddServerTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E602A8781780DC31007A3145 /* MOBAddServerTypeViewController.m */; };
+		E602A87B1780DC31007A3145 /* MOBAddServerTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E602A8791780DC31007A3145 /* MOBAddServerTypeViewController.xib */; };
+		E602A87F1780DCD9007A3145 /* MOBAddServerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E602A87D1780DCD9007A3145 /* MOBAddServerDetailsViewController.m */; };
+		E602A8801780DCD9007A3145 /* MOBAddServerDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E602A87E1780DCD9007A3145 /* MOBAddServerDetailsViewController.xib */; };
+		E602A8831780DD34007A3145 /* MOBConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E602A8821780DD34007A3145 /* MOBConstants.m */; };
 		E6991AEF173896830044EBCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6991AEE173896830044EBCA /* UIKit.framework */; };
 		E6991AF1173896830044EBCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6991AF0173896830044EBCA /* Foundation.framework */; };
 		E6991AF3173896830044EBCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6991AF2173896830044EBCA /* CoreGraphics.framework */; };
@@ -39,6 +44,14 @@
 		E602A871177E9949007A3145 /* MOBAPI+SABNZBD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MOBAPI+SABNZBD.m"; path = "API/Categories/MOBAPI+SABNZBD.m"; sourceTree = "<group>"; };
 		E602A873177EB30E007A3145 /* MOBSABNZBDHistorySlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOBSABNZBDHistorySlot.h; path = Models/MOBSABNZBDHistorySlot.h; sourceTree = "<group>"; };
 		E602A874177EB30E007A3145 /* MOBSABNZBDHistorySlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOBSABNZBDHistorySlot.m; path = Models/MOBSABNZBDHistorySlot.m; sourceTree = "<group>"; };
+		E602A8771780DC31007A3145 /* MOBAddServerTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOBAddServerTypeViewController.h; path = Controllers/MOBAddServerTypeViewController.h; sourceTree = "<group>"; };
+		E602A8781780DC31007A3145 /* MOBAddServerTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOBAddServerTypeViewController.m; path = Controllers/MOBAddServerTypeViewController.m; sourceTree = "<group>"; };
+		E602A8791780DC31007A3145 /* MOBAddServerTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MOBAddServerTypeViewController.xib; path = Controllers/MOBAddServerTypeViewController.xib; sourceTree = "<group>"; };
+		E602A87C1780DCD9007A3145 /* MOBAddServerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOBAddServerDetailsViewController.h; path = Controllers/MOBAddServerDetailsViewController.h; sourceTree = "<group>"; };
+		E602A87D1780DCD9007A3145 /* MOBAddServerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOBAddServerDetailsViewController.m; path = Controllers/MOBAddServerDetailsViewController.m; sourceTree = "<group>"; };
+		E602A87E1780DCD9007A3145 /* MOBAddServerDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MOBAddServerDetailsViewController.xib; path = Controllers/MOBAddServerDetailsViewController.xib; sourceTree = "<group>"; };
+		E602A8811780DD33007A3145 /* MOBConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBConstants.h; sourceTree = "<group>"; };
+		E602A8821780DD34007A3145 /* MOBConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBConstants.m; sourceTree = "<group>"; };
 		E6991AEB173896830044EBCA /* MonsterNAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonsterNAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6991AEE173896830044EBCA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E6991AF0173896830044EBCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -129,6 +142,19 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		E602A8761780DC05007A3145 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E602A8771780DC31007A3145 /* MOBAddServerTypeViewController.h */,
+				E602A8781780DC31007A3145 /* MOBAddServerTypeViewController.m */,
+				E602A8791780DC31007A3145 /* MOBAddServerTypeViewController.xib */,
+				E602A87C1780DCD9007A3145 /* MOBAddServerDetailsViewController.h */,
+				E602A87D1780DCD9007A3145 /* MOBAddServerDetailsViewController.m */,
+				E602A87E1780DCD9007A3145 /* MOBAddServerDetailsViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		E6991AE2173896820044EBCA = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +187,7 @@
 		E6991AF4173896830044EBCA /* MonsterNAS */ = {
 			isa = PBXGroup;
 			children = (
+				E602A8761780DC05007A3145 /* Controllers */,
 				E602A86B177E98CD007A3145 /* API */,
 				E6991B1117389B550044EBCA /* Models */,
 				E6991AFD173896830044EBCA /* MOBAppDelegate.h */,
@@ -169,6 +196,8 @@
 				E6991B07173896830044EBCA /* MOBViewController.m */,
 				E6991B09173896830044EBCA /* MOBViewController.xib */,
 				E6991AF5173896830044EBCA /* Supporting Files */,
+				E602A8811780DD33007A3145 /* MOBConstants.h */,
+				E602A8821780DD34007A3145 /* MOBConstants.m */,
 			);
 			path = MonsterNAS;
 			sourceTree = "<group>";
@@ -257,6 +286,8 @@
 				E6991B03173896830044EBCA /* Default@2x.png in Resources */,
 				E6991B05173896830044EBCA /* Default-568h@2x.png in Resources */,
 				E6991B0B173896830044EBCA /* MOBViewController.xib in Resources */,
+				E602A87B1780DC31007A3145 /* MOBAddServerTypeViewController.xib in Resources */,
+				E602A8801780DCD9007A3145 /* MOBAddServerDetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +341,9 @@
 				E602A86E177E98E6007A3145 /* MOBAPI.m in Sources */,
 				E602A872177E9949007A3145 /* MOBAPI+SABNZBD.m in Sources */,
 				E602A875177EB30E007A3145 /* MOBSABNZBDHistorySlot.m in Sources */,
+				E602A87A1780DC31007A3145 /* MOBAddServerTypeViewController.m in Sources */,
+				E602A87F1780DCD9007A3145 /* MOBAddServerDetailsViewController.m in Sources */,
+				E602A8831780DD34007A3145 /* MOBConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
